@@ -43,6 +43,22 @@ hist = cb.get_historical_data_auto('IAM', '2024-01-01', '2024-12-31')
 print(hist.head())
 ```
 
+## Afficher la liste des instruments et indices disponibles
+
+Vous pouvez facilement obtenir la liste complète des instruments et des indices disponibles dans Casabourse :
+
+```python
+import casabourse as cb
+
+# Liste des instruments disponibles
+df_instruments = cb.get_available_instrument()
+print(df_instruments.head())
+
+# Liste des indices disponibles
+df_indices = cb.get_available_indexes()
+print(df_indices.head())
+```
+
 ### Pour les utilisateurs
 
 La méthode recommandée est d'installer depuis PyPI :
