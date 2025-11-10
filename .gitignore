@@ -61,6 +61,7 @@ build/
 # local settings
 .env.local
 .env.*
+.pypirc
 
 # generated examples / exports
 docs/casabourse_documentation.pdf

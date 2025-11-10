@@ -1,4 +1,9 @@
+````markdown
 # Casabourse
+
+[![PyPI version](https://badge.fury.io/py/casabourse.svg)](https://badge.fury.io/py/casabourse)
+[![Python Versions](https://img.shields.io/pypi/pyversions/casabourse.svg)](https://pypi.org/project/casabourse/)
+[![License](https://img.shields.io/github/license/koffi/casabourse.svg)](https://github.com/koffi/casabourse/blob/main/LICENSE)
 
 Bibliothèque Python pour accéder aux données de la Bourse de Casablanca (Casablanca Stock Exchange).
 
@@ -6,18 +11,38 @@ Cette petite API fournit des fonctions pour récupérer les cotations en direct,
 les volumes et des métriques de marché prêtes à l'emploi. Les exemples d'utilisation se trouvent dans le
 répertoire `examples/` (script d'exemple et notebook).
 
+Développé et maintenu par Koffi.
+
 ## Installation
 
-Préféré : installer en mode développement depuis le dépôt local :
+### Pour les utilisateurs
 
-```powershell
+La méthode recommandée est d'installer depuis PyPI :
+
+```bash
+pip install casabourse
+```
+
+### Pour les développeurs
+
+Pour développer sur le package, clonez d'abord le dépôt :
+
+```bash
+git clone https://github.com/koffi/casabourse.git
+cd casabourse
+```
+
+Puis installez en mode développement :
+
+```bash
 pip install -e .
 ```
 
-Ou installer les dépendances listées dans `requirements.txt` :
+Les dépendances de développement incluent les outils de test et de documentation. Pour les installer :
 
-```powershell
+```bash
 pip install -r requirements.txt
+pip install -r docs/requirements-docs.txt
 ```
 
 ## Utilisation rapide
@@ -91,7 +116,29 @@ et tombe sur la première colonne numérique si aucune colonne explicite n'est t
 
 Si vous préférez un notebook interactif, copiez le code du script dans une cellule et utilisez `%matplotlib inline`.
 
-## Tests
+## Guide du développeur
+
+### Configuration de l'environnement
+
+1. Créez et activez un environnement virtuel Python :
+   ```bash
+   python -m venv venv
+   # Sur Windows :
+   .\venv\Scripts\activate
+   # Sur Unix/macOS :
+   source venv/bin/activate
+   ```
+
+2. Installez les dépendances de développement :
+   ```bash
+   pip install -e .
+   pip install -r requirements.txt
+   pip install -r docs/requirements-docs.txt
+   ```
+
+### Tests
+
+Les tests sont écrits avec pytest. Pour exécuter la suite de tests :
 
 Les tests unitaires simples se trouvent dans `tests/`. Pour lancer la suite de tests :
 
@@ -100,6 +147,19 @@ pip install -r requirements.txt
 pip install pytest
 pytest -q
 ```
+
+## Déploiement
+
+Le package est automatiquement publié sur PyPI via GitHub Actions lorsqu'une nouvelle release est créée. Le workflow de publication est défini dans `.github/workflows/publish.yml`.
+
+Pour créer une nouvelle release :
+
+1. Mettez à jour la version dans `casabourse/__version__.py`
+2. Créez un tag Git avec la nouvelle version
+3. Poussez le tag sur GitHub
+4. Créez une nouvelle release sur GitHub
+
+Le workflow se chargera automatiquement de construire et publier le package sur PyPI.
 
 ## Licence
 
