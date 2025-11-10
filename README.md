@@ -11,7 +11,37 @@ Cette petite API fournit des fonctions pour récupérer les cotations en direct,
 les volumes et des métriques de marché prêtes à l'emploi. Les exemples d'utilisation se trouvent dans le
 répertoire `examples/` (script d'exemple et notebook).
 
-Développé et maintenu par Koffi.
+## Installation
+
+```bash
+pip install casabourse
+```
+
+## Utilisation rapide
+
+```python
+import casabourse as cb
+
+# Récupérer les données de marché en direct
+df_live = cb.get_live_market_data()
+print(df_live.head())
+
+# Historique d'un ticker
+hist = cb.get_historical_data_auto('IAM', '2024-01-01', '2024-12-31')
+print(hist.head())
+```
+
+## Fonctionnalités
+
+- Données de marché en temps réel
+- Historiques des cours
+- Indices boursiers
+- Métriques de performance
+- Export des données (CSV, Excel)
+
+Pour plus de détails, consultez les exemples dans le dossier `examples/`.
+
+Développé et maintenu par Koffi Frederic SESSIE.
 
 ## Installation
 
