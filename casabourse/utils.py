@@ -27,7 +27,7 @@ def get_build_id():
     }
 
     try:
-        print("🔧 Récupération du buildId depuis la page d'accueil...")
+        # print("🔧 Récupération du buildId depuis la page d'accueil...")
         response = requests.get('https://www.casablanca-bourse.com/fr', headers=headers, verify=False, timeout=30)
         
         if response.status_code != 200:
@@ -46,7 +46,7 @@ def get_build_id():
         build_id = next_data.get('buildId')
         
         if build_id:
-            print(f"✅ BuildId récupéré avec succès: {build_id}")
+            # print(f"✅ BuildId récupéré avec succès: {build_id}")
             return build_id
         else:
             print("❌ BuildId non trouvé dans les données JSON")
@@ -74,7 +74,7 @@ def get_build_id_cached(force_refresh=False):
     if (not force_refresh and 
         _BUILD_ID_CACHE['build_id'] and 
         (current_time - _BUILD_ID_CACHE['timestamp']) < _BUILD_ID_CACHE['cache_duration']):
-        print(f"✅ Utilisation du buildId en cache: {_BUILD_ID_CACHE['build_id']}")
+        # print(f"✅ Utilisation du buildId en cache: {_BUILD_ID_CACHE['build_id']}")
         return _BUILD_ID_CACHE['build_id']
     
     # Récupérer un nouveau buildId
