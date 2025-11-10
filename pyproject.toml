@@ -1,6 +1,6 @@
 [project]
 name = "casabourse"
-dynamic = ["version"]
+version = "0.1.4"
 description = "API Python pour accéder aux données de la Bourse de Casablanca (cours, indices, volumes)"
 authors = [{ name="Koffi Frederic SESSIE", email="sessiekoffifrederic@gmail.com" }]
 license = { text = "MIT" }
@@ -16,10 +16,13 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Topic :: Office/Business :: Financial",
 ]
+dependencies = [
+    "requests>=2.25.0",
+    "pandas>=1.0.0",
+    "beautifulsoup4>=4.9.0",
+    "lxml>=4.6.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/Fredysessie/casabourse"
 Documentation = "https://Fredysessie.github.io/casabourse"
-
-[tool.setuptools.dynamic]
-version = { attr = "casabourse.__version__.__version__" }
