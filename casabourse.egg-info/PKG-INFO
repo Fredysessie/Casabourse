@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: casabourse
+Version: 0.1.0
+Summary: Package Python pour accéder aux données de la Bourse de Casablanca
+Author-email: Koffi Frederic SESSIE <sessiekoffifrederic@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/casabourse
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: license-file
+
+# Casabourse
+
+Package to access Casablanca Stock Exchange data.
+
+See examples in /examples.
