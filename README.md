@@ -1,15 +1,24 @@
 ````markdown
 # Casabourse
 
-[![PyPI version](https://badge.fury.io/py/casabourse.svg)](https://badge.fury.io/py/casabourse)
+[![PyPI version](https://badge.fury.io/py/casabourse.svg)](https://pypi.org/project/casabourse/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/casabourse.svg)](https://pypi.org/project/casabourse/)
-[![License](https://img.shields.io/github/license/koffi/casabourse.svg)](https://github.com/koffi/casabourse/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/Fredysessie/Casabourse.svg)](https://github.com/Fredysessie/Casabourse/blob/main/LICENSE) 
+[![Tests](https://github.com/Fredysessie/Casabourse/actions/workflows/ci.yml/badge.svg)](https://github.com/Fredysessie/Casabourse/actions)
 
-Bibliothèque Python pour accéder aux données de la Bourse de Casablanca (Casablanca Stock Exchange).
+**Casabourse** est une bibliothèque Python pour accéder aux données de la **Bourse de Casablanca (Casablanca Stock Exchange)**.
 
-Cette petite API fournit des fonctions pour récupérer les cotations en direct, les historiques, les indices,
-les volumes et des métriques de marché prêtes à l'emploi. Les exemples d'utilisation se trouvent dans le
-répertoire `examples/` (script d'exemple et notebook).
+Cette API légère fournit des fonctions pour récupérer :
+- Les cotations en direct  
+- Les historiques des instruments  
+- Les indices  
+- Les volumes échangés  
+- Les capitalisations et résumés de marché
+
+Les exemples d’utilisation se trouvent dans le répertoire [`examples/`](examples/)  
+(scripts et notebook Jupyter).
+
+Développé et maintenu par **Koffi Frederic SESSIE**.
 
 ## Installation
 
@@ -31,20 +40,6 @@ hist = cb.get_historical_data_auto('IAM', '2024-01-01', '2024-12-31')
 print(hist.head())
 ```
 
-## Fonctionnalités
-
-- Données de marché en temps réel
-- Historiques des cours
-- Indices boursiers
-- Métriques de performance
-- Export des données (CSV, Excel)
-
-Pour plus de détails, consultez les exemples dans le dossier `examples/`.
-
-Développé et maintenu par Koffi Frederic SESSIE.
-
-## Installation
-
 ### Pour les utilisateurs
 
 La méthode recommandée est d'installer depuis PyPI :
@@ -58,7 +53,7 @@ pip install casabourse
 Pour développer sur le package, clonez d'abord le dépôt :
 
 ```bash
-git clone https://github.com/koffi/casabourse.git
+git clone https://github.com/Fredysessie/Casabourse.git
 cd casabourse
 ```
 
