@@ -1,6 +1,6 @@
 [project]
 name = "casabourse"
-version = "0.1.0"
+dynamic = ["version"]
 description = "API Python pour accéder aux données de la Bourse de Casablanca (cours, indices, volumes)"
 authors = [{ name="Koffi Frederic SESSIE", email="sessiekoffifrederic@gmail.com" }]
 license = { text = "MIT" }
