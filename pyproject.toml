@@ -20,3 +20,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Fredysessie/casabourse"
 Documentation = "https://Fredysessie.github.io/casabourse"
+
+[tool.setuptools.dynamic]
+version = { attr = "casabourse.__version__.__version__" }
