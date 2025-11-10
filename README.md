@@ -1,12 +1,12 @@
 # Casabourse
 
-[![PyPI version](https://img.shields.io/pypi/v/casabourse.svg)](https://pypi.org/project/casabourse/)[![PyPI version](https://img.shields.io/pypi/v/casabourse.svg)](https://pypi.org/project/casabourse/)
+[![PyPI version](https://img.shields.io/pypi/v/casabourse.svg)](https://pypi.org/project/casabourse/)
 
-[![Python](https://img.shields.io/badge/python-%3E%3D3.8-blue.svg)](https://www.python.org/)[![Python](https://img.shields.io/badge/python-%3E%3D3.8-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.8-blue.svg)](https://www.python.org/)
 
-[![License](https://img.shields.io/github/license/Fredysessie/casabourse.svg)](https://github.com/Fredysessie/casabourse/blob/main/LICENSE)[![License](https://img.shields.io/github/license/Fredysessie/casabourse.svg)](https://github.com/Fredysessie/casabourse/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/Fredysessie/casabourse.svg)](https://github.com/Fredysessie/casabourse/blob/main/LICENSE)
 
-[![Release](https://github.com/Fredysessie/casabourse/actions/workflows/publish.yml/badge.svg)](https://github.com/Fredysessie/casabourse/actions)[![Release](https://github.com/Fredysessie/casabourse/actions/workflows/publish.yml/badge.svg)](https://github.com/Fredysessie/casabourse/actions)
+[![Release](https://github.com/Fredysessie/casabourse/actions/workflows/publish.yml/badge.svg)](https://github.com/Fredysessie/casabourse/actions)
 
 
 **Casabourse** est une bibliothèque Python pour accéder aux données de la **Bourse de Casablanca (Casablanca Stock Exchange)**.
