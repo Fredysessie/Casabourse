@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/python-%3E%3D3.8-blue.svg)](https://www.python.org/)
 
-[![License](https://img.shields.io/github/license/Fredysessie/casabourse.svg)](https://github.com/Fredysessie/casabourse/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 [![Release](https://github.com/Fredysessie/casabourse/actions/workflows/publish.yml/badge.svg)](https://github.com/Fredysessie/casabourse/actions)
 
