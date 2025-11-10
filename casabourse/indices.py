@@ -1,6 +1,6 @@
 from ._legacy_bourse_api import (
     get_all_indices_overview, extract_index_code, format_indices_to_dataframe,
-    get_indices_list_with_capitalization, get_main_indices, get_sector_indices,
+    get_indices_list_with_capitalization, get_main_indices, get_sector_indices, get_available_indexes,
     get_index_by_name, get_index_by_code, get_top_performers, get_worst_performers,
     export_indices_to_csv, get_available_indices_for_composition, get_index_composition,
     get_index_composition_batch, get_composition_for_main_indices, get_index_quotation,
