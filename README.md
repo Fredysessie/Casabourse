@@ -1,10 +1,10 @@
 ````markdown
 # Casabourse
 
-[![PyPI version](https://badge.fury.io/py/casabourse.svg)](https://pypi.org/project/casabourse/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/casabourse.svg)](https://pypi.org/project/casabourse/)
-[![License](https://img.shields.io/github/license/Fredysessie/Casabourse.svg)](https://github.com/Fredysessie/Casabourse/blob/main/LICENSE) 
-[![Tests](https://github.com/Fredysessie/Casabourse/actions/workflows/ci.yml/badge.svg)](https://github.com/Fredysessie/Casabourse/actions)
+[![PyPI version](https://img.shields.io/pypi/v/casabourse.svg)](https://pypi.org/project/casabourse/)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.8-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Fredysessie/casabourse/blob/main/LICENSE)
+[![Release](https://github.com/Fredysessie/casabourse/actions/workflows/publish.yml/badge.svg)](https://github.com/Fredysessie/casabourse/actions)
 
 **Casabourse** est une bibliothèque Python pour accéder aux données de la **Bourse de Casablanca (Casablanca Stock Exchange)**.
 
@@ -53,7 +53,7 @@ pip install casabourse
 Pour développer sur le package, clonez d'abord le dépôt :
 
 ```bash
-git clone https://github.com/Fredysessie/Casabourse.git
+git clone https://github.com/Fredysessie/casabourse.git
 cd casabourse
 ```
 
