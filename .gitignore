@@ -3,3 +3,64 @@ __pycache__/
 .env
 venv/
 .ipynb_checkpoints/
+
+# Python virtualenvs
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest
+.pytest_cache/
+coverage.xml
+.coverage
+htmlcov/
+
+# Sphinx build
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# caches
+.mypy_cache/
+.cache/
+.pytest_cache/
+
+# egg and wheel artifacts
+*.egg-info/
+dist/
+build/
+
+# local settings
+.env.local
+.env.*
+
+# generated examples / exports
+docs/casabourse_documentation.pdf
