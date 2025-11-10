@@ -5,6 +5,7 @@ import time
 from datetime import datetime, timedelta
 from typing import List, Union, Optional
 import json
+import re
 import warnings
 from urllib3.exceptions import InsecureRequestWarning
 import logging
@@ -3117,6 +3118,38 @@ def aggregate_data_by_period(df, periode):
 
 
 
+def get_available_instrument():
+    """
+    Retourne la liste complète des instruments disponibles dans Casabourse :
+    Colonnes : Nom, Symbole, Instrument_id, Secteur
+    """
+    df = get_market_data()
+    if df is not None:
+        # Si la colonne 'field_symbol' existe, on la renomme en 'Instrument_id'
+        if 'field_symbol' in df.columns:
+            df = df.rename(columns={"field_symbol": "Instrument_id"})
+        # Sélectionner les colonnes demandées
+        cols = [col for col in ["Nom", "Symbole", "Instrument_id", "Secteur"] if col in df.columns]
+        return df[cols]
+    return None
+
+def get_available_indexes():
+    """
+    Retourne la liste complète des indices disponibles dans Casabourse :
+    Colonnes : 'Catégorie', 'Indice', 'Code_Index', 'Index_id'
+    """
+    indices_data = get_all_indices_overview()
+    df_index2 = format_indices_to_dataframe(indices_data)
+    if df_index2 is not None:
+        # Sélectionner les colonnes demandées
+        cols = [col for col in ["Catégorie", "Indice", "Code_Index"] if col in df_index2.columns]
+        available_indexes = df_index2[cols].copy()
+        # Appliquer la fonction get_index_id_by_code_simple à la colonne Code_Index
+        if "Code_Index" in available_indexes.columns:
+            available_indexes["Index_id"] = available_indexes["Code_Index"].apply(get_index_id_by_code)
+        return available_indexes[["Catégorie", "Indice", "Code_Index", "Index_id"]]
+    return None
+
 
 
 # # Placeholder implementations based on user's original code (trimmed for packaging)
@@ -3254,3 +3287,4 @@ def aggregate_data_by_period(df, periode):
 
 # def aggregate_data_by_period(df, periode):
 #     return df
+
